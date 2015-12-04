@@ -316,6 +316,7 @@ SideMenu.defaultProps = {
   onChange: () => {},
   animationStyle: (value) => {
     return {
+      left: value,  // work around for react-native 0.14.* bug
       transform: [{
         translateX: value,
       }, ],
